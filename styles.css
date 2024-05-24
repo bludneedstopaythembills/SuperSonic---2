@@ -1,0 +1,329 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+nav {
+    background: #000000; /* Black background for nav */
+    color: #ffffff; /* White text */
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+.tagline {
+    font-style: italic;
+    font-family: 'Georgia', serif; /* Distinguished font */
+    color: #00aaff;
+    margin-right: 1rem;
+}
+
+.opener {
+    position: relative;
+    overflow: hidden;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.opener img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.welcome-text {
+    position: absolute;
+    bottom: 20px; /* Positioned at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Carousel container styles */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    margin: 2rem auto;
+    width: 100%;
+    height: 80vh; /* Set height to 80% of the viewport height */
+    background: #000; /* Fallback background color */
+}
+
+
+.fade{
+    opacity: 0;
+    transform: translateY(50px); /* Optional: adds a slight move-up effect */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.fade.in-viewport {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeIn 1s forwards; /* Optional: adds animation */
+}
+
+/* Background container styles */
+.carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    z-index: 1;
+    transform: scale(1.1); /* Slightly scale up the background to cover edges */
+}
+
+/* Carousel images container styles */
+.carousel-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-images img {
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+/* Carousel control styles */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 3;
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
+}
+
+
+#team .team-members, #team .history, #triumphs .achievements, #collaborate .collaboration-content, #contact {
+    padding: 2rem;
+    background: #262626; /* Dark section background */
+    margin: 2rem 0;
+}
+
+#team .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member {
+    text-align: center;
+    margin: 1rem;
+    position: relative;
+    padding: 5rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.member:hover {
+    background-color: #333333;
+}
+
+.member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.member:hover img {
+    transform: scale(1.1);
+}
+
+.member-info {
+    margin-top: 1rem;
+}
+
+.member-name {
+    transition: color 0.3s;
+}
+
+.member:hover .member-name {
+    color: #00aaff;
+}
+
+.history, .achievements, .collaboration-content, #contact {
+    background-color: #333333; /* Slightly lighter background for sections */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.collaboration-content p, .collaboration-content ul {
+    font-size: 1.25rem; /* Increased font size for the collaboration page */
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #1a1a1a; /* Dark background for form inputs */
+    color: #ffffff; /* Light text */
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background: #00aaff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-link {
+    color: #ffffff; /* Changed from blue to white */
+    text-decoration: none;
+}
+
+h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #00aaff; /* Heading color */
+    text-align: center;
+    font-size: 3rem; /* Increased font size for headings */
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin-top: 5;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+/* Existing CSS styles remain unchanged */
+
+.triumphs-text {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.triumphs-text p {
+    font-size: 1.5rem;
+}
+
+/* General carousel styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+   
+    display: none;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}

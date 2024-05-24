@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Supersonic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Team Supersonic</div>
+            <ul>
+                <li><a href="#home" class="nav-link" id="nav-home">Home</a></li>
+                <li><a href="#team" class="nav-link" id="nav-team">Team</a></li>
+                <li><a href="#triumphs" class="nav-link" id="nav-triumphs">Triumphs</a></li>
+                <li><a href="#collaborate" class="nav-link" id="nav-collaborate">Collaborate</a></li>
+                <li><a href="#contact" class="nav-link" id="nav-contact">Contact Us</a></li>
+            </ul>
+            <div class="tagline">Beyond Ordinary</div>
+        </div>
+    </nav>
+    <div class="opener">
+        <img src="Website Opener.png" alt="Website Opener">
+        <div class="welcome-text">Welcome to the official Website of the Team SuperSonic - Champions of the West Indian Cluster</div>
+    </div>
+    <section id="home">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="team1.jpeg" alt="Team Image 1" class="active">
+                <img src="team2.jpeg" alt="Team Image 2">
+                <img src="team3.jpeg" alt="Team Image 3">
+                <img src="team4.jpeg" alt="Team Image 4">
+                <img src="team5.jpeg" alt="Team Image 5">
+            </div>
+            <button class="carousel-control prev">&lt;</button>
+            <button class="carousel-control next">&gt;</button>
+        </div>
+        <h2>Catch hold of the new Upvasah!</h2>
+        <div class="carousel car-renders-carousel">
+            <div class="carousel-images">
+                <img src="car1.png" alt="Car Render 1" class="active">
+                <img src="car2.png" alt="Car Render 2">
+                <img src="car3.png" alt="Car Render 3">
+                <img src="car4.png" alt="Car Render 4">
+                <img src="car5.png" alt="Car Render 5">
+                <img src="car6.png" alt="Car Render 6">
+                <img src="car7.png" alt="Car Render 7">
+            </div>
+            <button class="carousel-control prev">&lt;</button>
+            <button class="carousel-control next">&gt;</button>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>Meet The Team</h2>
+        <div class="team-members">
+            <div class="member">
+                <img src="member1.png" alt="Abhigyan Srivastava">
+                <div class="member-info">
+                    <p class="member-name"><strong>Abhigyan Srivastava</strong></p>
+                    <p>Team Manager</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="member2.jpg" alt="Aarush Nikumbh">
+                <div class="member-info">
+                    <p class="member-name"><strong>Aarush Nikumbh</strong></p>
+                    <p>Design Manager</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="member3.jpeg" alt="Kuber Dedge">
+                <div class="member-info">
+                    <p class="member-name"><strong>Kuber Dedge</strong></p>
+                    <p>Sponsorship Manager</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="member4.jpg" alt="Aarav Salunkhe">
+                <div class="member-info">
+                    <p class="member-name"><strong>Aarav Salunkhe</strong></p>
+                    <p>Manufacturing Manager</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="member5.jpeg" alt="Aksh Bansal">
+                <div class="member-info">
+                    <p class="member-name"><strong>Aksh Bansal</strong></p>
+                    <p>Resource Manager</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="member6.png" alt="Ritam Agrawal">
+                <div class="member-info">
+                    <p class="member-name"><strong>Ritam Agrawal</strong></p>
+                    <p>Graphics Manager</p>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <h3>History</h3>
+            <p>Our team's history goes here...</p>
+        </div>
+    </section>
+
+    <section id="triumphs">
+        <h2>Triumphs</h2>
+        <div class="triumphs-text">
+            <p>It brings us immense pleasure to put forth that our participation in the West-India Cluster, marked our emergence as <strong>CHAMPIONS</strong> and even won the Best Verbal Presentation.</p>
+        </div>
+        <div class="carousel">
+            <div class="carousel-images">
+                div class="carousel-images">
+                    <img src="triumph1.jpg" alt="Triumph Image 1" class="active">
+                    <img src="triumph2.png" alt="Triumph Image 2">
+                </div>
+            </div>
+            <button class="carousel-control prev">&lt;</button>
+            <button class="carousel-control next">&gt;</button>
+        </div>
+    </section>
+
+    <section id="collaborate">
+        <div class="collaboration-content">
+            <p>SuperSonic is supported by several Indian Businesses, however, we look forward towards further collaboration. Under this collaboration,</p>
+            <p>We are open to:</p>
+            <ul>
+                <li>Logo Branding on Car, Jersey, and Pit Display</li>
+                <li>Acknowledgement on social media handles, portfolios, and verbal presentations</li>
+                <li>Regular acknowledgment and recognition of sponsors in team communications, and press releases</li>
+                <li>We expect to have a vision for a long-term partnership beyond a single competition cycle</li>
+            </ul>
+            <p>We are not obliged to:</p>
+            <ul>
+                <li>Keep our collaboration confidential</li>
+                <li>Bound ourselves to a definite number of sponsors</li>
+                <li>Continue the collaboration unwillingly</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:supersonic6954@gmail.com" class="contact-link">supersonic6954@gmail.com</a></p>
+        <p>Phone: <a href="tel:9834966053" class="contact-link">9834966053</a></p>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
